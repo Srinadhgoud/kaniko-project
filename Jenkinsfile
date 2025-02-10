@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     // Clone the repository and checkout the main branch
-                    git branch: 'main', url: 'https://github.com/Srinadhgoud/test.git'
+                    git branch: 'main', url: 'https://github.com/Srinadhgoud/kaniko-project.git'
                     
                     def commitId = sh(script: "git rev-parse HEAD", returnStdout: true).trim()
 
