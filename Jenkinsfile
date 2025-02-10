@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'NAMESPACE', defaultValue: '', description: 'Enter the namespace')
-        string(name: 'GIT_CONTEXT', defaultValue: '', description: 'Enter the git context')
-        string(name: 'REGISTRY_USERNAME', defaultValue: '', description: 'Enter the registry username')
-        string(name: 'IMAGE_NAME', defaultValue: '', description: 'Enter the image name')
-        string(name: 'TAG_NAME', defaultValue: '', description: 'Enter the tag name')
+        string(name: 'NAMESPACE', defaultValue: 'sandbox', description: 'Enter the namespace')
+        string(name: 'GIT_CONTEXT', defaultValue: 'git://github.com/Srinadhgoud/test.git#refs/heads/main', description: 'Enter the git context')
+        string(name: 'REGISTRY_USERNAME', defaultValue: 'sahithiperka', description: 'Enter the registry username')
+        string(name: 'IMAGE_NAME', defaultValue: 'test2', description: 'Enter the image name')
+        string(name: 'TAG_NAME', defaultValue: 'g2', description: 'Enter the tag name')
     }
 
     environment {
